@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="icon" href='./img/bookmark.png'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg">
+
+<div>
+<div class="text-center "> 
+    <h1 class="fw-bolder ">Bookmarker</h1></div>
+<div class="bookmark w-75 p-3 py-4 d-flex justify-content-center align-items-center mt-5"></div>
+<h2 class="m-auto w-50  text-center mb-4"><i class="fa-solid fa-bookmark me-3" style="color: #00ff1e;"></i></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ms-3" style="color: #00ff1e;"></i></h2>
+</div>
+
+
+<div class="container ">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i>Site NAME</label>
+        <input oninput="validateallproduct(this)" type="text" class="form-control" id="Productname" placeholder="Bookmark Name">
+        <div class="alert alert-danger d-none">Must start with capial letter</div>
+      </div>
+      <div class="my-1">
+        <label for="formGroupExampleInput2" class="form-label "><i class="fa-solid fa-link pe-2 "></i>Site URL</label>
+        <input oninput="validateallproduct(this)" type="text" class="form-control" id="Productsite" placeholder="Website URL">
+        <div class="alert alert-danger d-none">Site URL must be a valid one</div>
+      </div>
+      <div class=" w-25 m-auto text-center mt-3">
+
+    <button type="button" onclick="createproduct()" class="btn btn-danger w-50 p-2 ">Submit</button>
+</div>
+</div>
+<div class="bookmark w-75 p-3 py-4 d-flex justify-content-center align-items-center mt-3"></div>
+<div class="container">
+    <div class="">
+        <table class="table table-striped text-center">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+                  </tr>
+          </thead>
+         <tbody id="data">
+         </tbody>
+        </table>
+      </div>
+</div>
+
+    <script src="./jss/main.js"></script>
+</body>
+</html>

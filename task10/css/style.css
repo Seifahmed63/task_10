@@ -1,0 +1,18 @@
+.bg{
+    background-color:   rgb(247, 236, 222);
+}
+h1{
+    font-family: "Dancing Script", cursive;
+
+}
+.fw-bolder{
+font-size: 60px;
+font-weight: 800px;
+margin-top: 30px;
+}
+.bookmark{
+    margin: auto;
+    border-width: 3px 0 0px 0 ;
+border-style: dotted;
+
+}
